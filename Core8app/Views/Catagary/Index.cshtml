@@ -1,0 +1,27 @@
+﻿<h1>Catagery view Index</h1>
+
+ <p> View Data Value : @ViewData["Name"]</p> 
+<p> View Data Value In Upper : @ViewData["Name"]?.ToString()?.ToUpper()</p>
+@* <p> View Data Value in Upper : @ViewData["Name"].ToUpper()</p> *@
+<p>ViewBag value: @ViewBag.Email</p>
+<p>ViewBag value In Upper: @ViewBag.Email.ToUpper()</p>
+
+
+
+<br />
+<p>
+    We can rapper the ViewData in ViewBag(Alternatively)
+
+</p>
+<p>ViewData value in ViewBag : @ViewBag["Name"]</p>
+<p>ViewBag value in ViewData : @ViewBag.Email</p>
+
+@* <p>TempData Value : @TempData["Freedom Fighter"]</p>
+ *@
+ 
+ <p>TempData Value : @TempData["FreedomFighter"]</p>
+@{
+
+    TempData.Keep("FreedomFighter");
+}
+@Html.ActionLink("DEtails","details")

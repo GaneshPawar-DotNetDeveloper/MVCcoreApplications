@@ -10,17 +10,17 @@ namespace Core8app.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
-            _logger = logger; ;
+            _logger = logger; 
         }
 
         public IActionResult Index()
         {
-            return View(); ;
+            return View(); 
         }
 
         public IActionResult Privacy()
         {
-            return View();;
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

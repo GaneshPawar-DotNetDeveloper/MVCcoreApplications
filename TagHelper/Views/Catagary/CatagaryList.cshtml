@@ -1,0 +1,32 @@
+﻿@model TagHelper.Models.Catagory
+
+@{
+    ViewData["Title"] = "CatagaryList";
+}
+
+<h1>CatagaryList</h1>
+
+<div>
+    <h4>Catagory</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CatagaryId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CatagaryId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CatagoryName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CatagoryName)
+        </dd>
+    </dl>
+</div>
+<div>
+ @*    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) | *@
+         @* here we use html heper class *@   
+         <a asp-action="Create" asp-controller="Catagory">Create New</a>
+ <a asp-action="Index">Back to List</a>
+</div>
